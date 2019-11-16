@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Light | jQuery Mousemove Effects</title>
+  </head>
+  <body>
+    <section>
+      <div class="light"></div>
+      <h2>The Power of Light</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+        consectetur earum perspiciatis quis aliquid? Quisquam saepe officia
+        excepturi in aliquid repellat, quae nostrum sapiente ex? Quia rem porro
+        inventore dolorum saepe vel. Vero id eius magnam numquam odio iusto
+        voluptatem eveniet omnis consequatur quidem atque commodi quod a
+        veritatis, porro, officia, delectus eligendi est blanditiis? Debitis
+        quisquam velit id ducimus nobis voluptatibus, atque quia! Cupiditate
+        soluta eos repellat illo tenetur, temporibus quisquam eligendi numquam
+        earum porro qui minus? Eligendi ut accusamus temporibus, exercitationem
+        hic mollitia laboriosam fuga velit possimus aperiam rem totam
+        reprehenderit? Ipsum omnis consectetur fugit aut architecto vero fuga
+        voluptas, nobis, libero soluta commodi molestias incidunt quibusdam
+        voluptates iste quidem eligendi eum laudantium voluptatem? Esse est
+        magni, dolore, veniam adipisci iure maiores maxime, eius reprehenderit
+        expedita repellat impedit itaque fugiat hic minus perferendis illum
+        doloremque excepturi eligendi totam quasi quibusdam corrupti ullam.
+        Adipisci sapiente optio pariatur illum voluptatem, cum exercitationem at
+        rem illo quod deleniti hic! Reprehenderit tempora minima culpa labore
+        dolore unde corporis nobis sapiente id nesciunt, perspiciatis sequi
+        fugiat saepe quisquam iure maxime laudantium laboriosam aspernatur!
+      </p>
+      <img src="img.jpg" alt="" />
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+      $(document).mousemove(function(e) {
+        var X = e.pageX;
+        var Y = e.pageY;
+        $(".light").css(
+          "background",
+          "radial-gradient(circle at " +
+            X +
+            "px " +
+            Y +
+            "px, transparent, #000 30% )"
+        );
+      });
+    </script>
+  </body>
+</html>
